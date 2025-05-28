@@ -73,37 +73,11 @@ public class VentanaEsfera extends javax.swing.JFrame {
     }
 
     private void btnCalcularMouseClicked(java.awt.event.MouseEvent evt) {
-        // TODO add your handling code here:
         double radio = Double.valueOf(radioField.getText());
         Esfera esfera = new Esfera(radio);
         volumenField.setText("Volumen (cm3): " + esfera.getVolumen());
         superficieField.setText("Superficie (cm3): " + esfera.getSuperficie());
     }
-
-//    public static void main(String args[]) {
-//        try {
-//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-//                if ("Nimbus".equals(info.getName())) {
-//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-//                    break;
-//                }
-//            }
-//        } catch (ClassNotFoundException ex) {
-//            java.util.logging.Logger.getLogger(VentanaEsfera.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-//        } catch (InstantiationException ex) {
-//            java.util.logging.Logger.getLogger(VentanaEsfera.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-//        } catch (IllegalAccessException ex) {
-//            java.util.logging.Logger.getLogger(VentanaEsfera.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-//        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-//            java.util.logging.Logger.getLogger(VentanaEsfera.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-//        }
-//
-//        java.awt.EventQueue.invokeLater(new Runnable() {
-//            public void run() {
-//                new VentanaEsfera().setVisible(true);
-//            }
-//        });
-//    }
 
     // Variables declaration - do not modify
     private javax.swing.JButton btnCalcular;

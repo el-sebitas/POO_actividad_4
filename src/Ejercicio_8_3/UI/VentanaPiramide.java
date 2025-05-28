@@ -99,7 +99,6 @@ public class VentanaPiramide extends javax.swing.JFrame {
     }
 
     private void btnCalcularMouseClicked(java.awt.event.MouseEvent evt) {
-        // TODO add your handling code here:
         double altura = Double.valueOf(alturaField.getText());
         double apotema = Double.valueOf(apotemaField1.getText());
         double base = Double.valueOf(baseField.getText());
@@ -109,31 +108,6 @@ public class VentanaPiramide extends javax.swing.JFrame {
         volumenField.setText("Volumen (cm3): " + piramide.getVolumen());
         superficieField.setText("Superficie (cm3): " + piramide.getSuperficie());
     }
-
-//    public static void main(String args[]) {
-//        try {
-//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-//                if ("Nimbus".equals(info.getName())) {
-//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-//                    break;
-//                }
-//            }
-//        } catch (ClassNotFoundException ex) {
-//            java.util.logging.Logger.getLogger(VentanaPiramide.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-//        } catch (InstantiationException ex) {
-//            java.util.logging.Logger.getLogger(VentanaPiramide.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-//        } catch (IllegalAccessException ex) {
-//            java.util.logging.Logger.getLogger(VentanaPiramide.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-//        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-//            java.util.logging.Logger.getLogger(VentanaPiramide.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-//        }
-//
-//        java.awt.EventQueue.invokeLater(new Runnable() {
-//            public void run() {
-//                new VentanaPiramide().setVisible(true);
-//            }
-//        });
-//    }
 
     // Variables declaration - do not modify
     private javax.swing.JTextField alturaField;
