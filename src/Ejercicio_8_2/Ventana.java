@@ -1,3 +1,5 @@
+package Ejercicio_8_2;
+
 public class Ventana extends javax.swing.JFrame {
     public Ventana() {
         initComponents();
@@ -30,7 +32,7 @@ public class Ventana extends javax.swing.JFrame {
         campMenor = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Notas");
+        setTitle("Ejercicio_8_2.Notas");
 
         btnCalcular.setText("Calcular");
         btnCalcular.addMouseListener(new java.awt.event.MouseAdapter() {
