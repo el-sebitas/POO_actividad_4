@@ -35,7 +35,7 @@ public class Notas {
         double suma = 0;
 
         for (double nota: notas) {
-            suma = Math.pow(nota, 2);
+            suma = Math.pow(nota - prom, 2);
         }
         return Math.sqrt(suma);
     }

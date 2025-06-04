@@ -105,8 +105,8 @@ public class VentanaPiramide extends javax.swing.JFrame {
         Piramide piramide = new Piramide(altura, apotema, base);
 
 
-        volumenField.setText("Volumen (cm3): " + piramide.getVolumen());
-        superficieField.setText("Superficie (cm3): " + piramide.getSuperficie());
+        volumenField.setText("Volumen (cm3): " + String.format("%.2f", piramide.getVolumen()));
+        superficieField.setText("Superficie (cm3): " + String.format("%.2f", piramide.getSuperficie()));
     }
 
     // Variables declaration - do not modify

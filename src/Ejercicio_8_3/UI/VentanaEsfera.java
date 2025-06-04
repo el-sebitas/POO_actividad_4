@@ -75,8 +75,8 @@ public class VentanaEsfera extends javax.swing.JFrame {
     private void btnCalcularMouseClicked(java.awt.event.MouseEvent evt) {
         double radio = Double.valueOf(radioField.getText());
         Esfera esfera = new Esfera(radio);
-        volumenField.setText("Volumen (cm3): " + esfera.getVolumen());
-        superficieField.setText("Superficie (cm3): " + esfera.getSuperficie());
+        volumenField.setText("Volumen (cm3): " + String.format("%.2f", esfera.getVolumen()));
+        superficieField.setText("Superficie (cm3): " + String.format("%.2f", esfera.getSuperficie()));
     }
 
     // Variables declaration - do not modify

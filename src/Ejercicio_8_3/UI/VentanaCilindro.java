@@ -89,8 +89,8 @@ public class VentanaCilindro extends javax.swing.JFrame {
         double radio = Double.valueOf(radioField.getText());
         Cilindro cilindro = new Cilindro(altura, radio);
 
-        volumenField.setText("Volumen (cm3): " + cilindro.getVolumen());
-        superficieField.setText("Superficie (cm3): " + cilindro.getSuperficie());
+        volumenField.setText("Volumen (cm3): " + String.format("%.2f", cilindro.getVolumen()));
+        superficieField.setText("Superficie (cm3): " + String.format("%.2f", cilindro.getSuperficie()));
     }
 
     // Variables declaration - do not modify
